@@ -15,6 +15,7 @@ export const createAppTheme = () => {
             backgroundColor: "background.paper",
             color: "text.primary",
             borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
+            zIndex: (theme) => theme.zIndex.drawer + 1,
           },
         },
       },
