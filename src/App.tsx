@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import { ThemeProvider } from "@mui/material";
 
-import { createAppTheme } from "./app_theme";
+import { createMuiTheme } from "./theme/theme";
 
 import "./index.css";
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const theme = createAppTheme();
+  const theme = createMuiTheme();
   return (
     <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
